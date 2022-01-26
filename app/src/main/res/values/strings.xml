@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">OBD-II</string>
+    <string name="developed">Desarrollador por</string>
+    <string name="by">Byron Huaraca</string>
+    <string name="carga">Cargar datos</string>
+    <string name="dash">Tablero</string>
+    <string name="stats">Estadísticas</string>
+    <string name="failureSaved">Fallos guardados</string>
+    <string name="failure">Fallos</string>
+    <string name="profile">Perfiles</string>
+    <string name="title_activity_tablero">Tablero</string>
+    <string name="starter">Los códigos de fallas dignósticos también denominados como fallas representan los códigos alfanuméricos, que la ECU emite, cuando detecta la falla.</string>
+    <string name="en_Cuenta">Hay que tener en cuenta:</string>
+    <string name="uno">1. Una vez confirmada la falla en el vehículo, la ECU guarda el código para ser conservado.</string>
+    <string name="dos">2. El código temporal indica una falla no confirmadas.</string>
+    <string name="tres">3. Los códigos obtenidos permanentes indican fallas confirmadas.</string>
+    <string name="read">Comenzar</string>
+    <string name="back">Atrás</string>
+    <string name="vel_med">Velocidad media</string>
+    <string name="km_h">km/h</string>
+    <string name="dist_rec">Distancia recorrida</string>
+    <string name="km">km</string>
+    <string name="vehiculo1">Vehículo 1</string>
+    <string name="vehiculo2">Vehículo 2</string>
+    <string name="vehiculo3">Vehículo 3</string>
+    <string name="vehiculo4">Vehículo 4</string>
+
+    <!-- Valores por defecto -->
+    <string name="codigo1">P0960</string>
+    <string name="detalle1">Pressure control solenoid "A" control circuit open</string>
+
+    <string name="codigo2">P0876</string>
+    <string name="detalle2">Transmission Fluid Pressure (TFP) Sensor / Switch “D” Range / Performance</string>
+
+    <string name="codigo3">P0797</string>
+    <string name="detalle3">Transmission Fluid Pressure (TFP) Solenoid C - Stuck</string>
+
+</resources>

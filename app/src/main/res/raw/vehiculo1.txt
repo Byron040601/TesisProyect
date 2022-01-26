@@ -1,0 +1,32 @@
+Car Scanner ELM OBD2
+DTC report
+Selected brand: Kia
+
+============1==============
+P0626
+Raw code: 0626
+ECU: Engine control unit
+Status: Confirmed
+OBDII: Alternator field terminal - circuit high
+
+============2==============
+P0327
+Raw code: 0327
+ECU: Engine control unit
+Status: Confirmed
+OBDII: Knock sensor (KS) 1, bank 1 - low input
+
+============3==============
+P0339
+Raw code: 0339
+ECU: Engine control unit
+Status: Confirmed
+OBDII: Crankshaft position (CKP) sensor - circuit intermittent
+
+============4==============
+P0626
+Raw code: 0626
+ECU: Engine control unit
+Status: Pending fault present, Validated and stored in non volatile memory, Validated fault present at time of request
+OBDII: Alternator field terminal - circuit high
+

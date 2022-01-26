@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "832391371189",
+    "project_id": "obd-ii-cdb11",
+    "storage_bucket": "obd-ii-cdb11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832391371189:android:e739f3915b287cecc9e1fc",
+        "android_client_info": {
+          "package_name": "com.example.tesis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "832391371189-okm1c21btpp72qmefqe1odcdb94dic62.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tesis",
+            "certificate_hash": "c0533001b949ecb7329fe1ce3035f2dd2ba628a7"
+          }
+        },
+        {
+          "client_id": "832391371189-lgs4qjbd8r486ghh77kfkea7a343vmu1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA29sYgaEdIaZtIlyyR-OEwnklVC1VmZyg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "832391371189-lgs4qjbd8r486ghh77kfkea7a343vmu1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
