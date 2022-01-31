@@ -21,10 +21,8 @@ import java.util.List;
 
 public class Fallos2 extends AppCompatActivity {
 
-    private final static String URL = "https://codigosdtc.com/listado-de-codigos-dtc-obdii/";
-    private final static String URL2 = "https://codigosdtc.com/listado-de-codigos-dtc-obdii/";
-    private final static String URL3 = "https://codigosdtc.com/listado-de-codigos-dtc-obdii/";
-    private final static String URL4 = "https://codigosdtc.com/listado-de-codigos-dtc-obdii/";
+    private static
+
     Button back, vehiculo1;
     ListView listFallos1, listFallos2, listFallos3, listFallos4;
 
@@ -84,7 +82,9 @@ public class Fallos2 extends AppCompatActivity {
                 if (parent.getItemAtPosition(position).equals("P0626") ||
                         parent.getItemAtPosition(position).equals("P0327") ||
                         parent.getItemAtPosition(position).equals("P0339")){
-                    intent.setData(Uri.parse(URL));
+                    String URL = "https://codigosdtc.com/";
+                    String hipervinculo = URL + parent.getItemAtPosition(position).toString();
+                    intent.setData(Uri.parse(hipervinculo));
                     startActivity(intent);
                 }
             }

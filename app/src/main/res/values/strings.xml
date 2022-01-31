@@ -24,6 +24,7 @@
     <string name="vehiculo2">Vehículo 2</string>
     <string name="vehiculo3">Vehículo 3</string>
     <string name="vehiculo4">Vehículo 4</string>
+    <string name="nota"><b>NOTA:</b> Si se desea conocer el detalle del fallo presentado, pulsar en el código DTC.</string>
 
     <!-- Valores por defecto -->
     <string name="codigo1">P0960</string>

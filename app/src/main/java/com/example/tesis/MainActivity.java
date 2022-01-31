@@ -15,15 +15,14 @@ import android.widget.Toast;
 
 import com.google.firebase.firestore.FirebaseFirestore;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -60,52 +59,32 @@ public class MainActivity extends AppCompatActivity {
 
         charge.setOnClickListener(new View.OnClickListener() {
             String[] typeVehicle;
-            ArrayList failures;
             String vehiculo;
-            JSONObject jsonObject = new JSONObject();
-            JSONArray jsonArray = new JSONArray();
 
             @Override
             public void onClick(View v) {
-//                if(!adapter.isEnabled()){
-//                    message("Espere un momento mientras activamos la conexión Bluetooth.");
-//                    Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-//                    startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
-//                }
-//                else{
-//                    message("La conexión Bluetooth ya está activa.");
-//                }
-//                if (adapter.isEnabled()){
-//                    deviceConected.setText("Dispositivos vinculados");
-//                    Set<BluetoothDevice> devices = adapter.getBondedDevices();
-//                    for (BluetoothDevice device: devices){
-//                        deviceConected.append("\n" + device.getName() + "\n Dirección MAC " + device.getAddress());
-//                    }
-//                }
                 try {
                     cargaDatos();
                     typeVehicle = datos[2].split(":");
                     vehiculo = typeVehicle[1];
-                    data.append(vehiculo);
+//                    data.append(vehiculo);
 
                     Map<String, Object> fallos = new HashMap<>();
-                    fallos.put("Alternator field terminal - circuit high", "P0626");
-                    fallos.put("Knock sensor (KS) 1, bank 1 - low input","P0327");
-                    fallos.put("Crankshaft position (CKP) sensor - circuit intermittent", "P0339");
+                    fallos.put("P0626", "Alternator field terminal - circuit high");
+                    fallos.put("P0327","Knock sensor (KS) 1 - bank 1 - low input");
+                    fallos.put("P0339", "Crankshaft position (CKP) sensor - circuit intermittent");
 
-//
-//                    jsonArray.put(failures);
-//
-//                    jsonObject.put("vehiculo", vehiculo);
-//                    jsonObject.put("fallos", jsonArray);
+//                    Map<String, Object> fallos2 = new HashMap<>();
+//                    fallos2.put("P0960", "Pressure control solenoid 'A' control circuit open");
+//                    fallos2.put("P0876","Transmission Fluid Pressure (TFP) Sensor / Switch 'D' Range / Performance");
+//                    fallos2.put("P0797", "Transmission Fluid Pressure (TFP) Solenoid C - Stuck");
 
                     db.collection("vehiculo").document(vehiculo).set(fallos);
-
-//                    data.append(failures.toString());
+//                    db.collection("vehiculo").document("Grand Vitara").set(fallos2);
 
                 } catch (IOException e) {
                     Toast.makeText(MainActivity.this, "No se pudo cargar los datos", Toast.LENGTH_SHORT).show();
-//                    e.printStackTrace();
+                    e.printStackTrace();
                 }
             }
         });

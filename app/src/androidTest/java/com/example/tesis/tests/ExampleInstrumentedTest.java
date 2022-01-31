@@ -1,4 +1,4 @@
-package com.example.tesis;
+package com.example.tesis.tests;
 
 import android.content.Context;
 
