@@ -1,5 +1,6 @@
 package com.example.tesis.tests;
 
+import android.app.Activity;
 import android.content.Context;
 
 import androidx.test.platform.app.InstrumentationRegistry;
@@ -9,6 +10,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import static org.junit.Assert.*;
+
+import com.example.tesis.Fallos2;
 
 /**
  * Instrumented test, which will execute on an Android device.
@@ -23,4 +26,9 @@ public class ExampleInstrumentedTest {
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
         assertEquals("com.example.tesis", appContext.getPackageName());
     }
+
+//    public void fallos () {
+//        Activity activity = Fallos2.FILE_INTEGRITY_SERVICE.
+//        assert();
+//    }
 }

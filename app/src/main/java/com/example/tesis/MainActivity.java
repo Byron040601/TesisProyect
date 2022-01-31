@@ -7,10 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -19,10 +16,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -33,10 +27,7 @@ public class MainActivity extends AppCompatActivity {
     public String[] datos;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
 
-    Button charge, failure, saved, profiles, stats;
-    BluetoothAdapter adapter;
-    TextView data;
-    ListView listFallos1;
+    Button charge, failure, saved, stats;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,14 +39,6 @@ public class MainActivity extends AppCompatActivity {
         stats = findViewById(R.id.stats);
         failure = findViewById(R.id.failure);
         saved = findViewById(R.id.saved);
-        profiles = findViewById(R.id.profiles);
-        data = findViewById(R.id.datos);
-
-//        adapter = BluetoothAdapter.getDefaultAdapter();
-//
-//        if (adapter == null) {
-//            // Device doesn't support Bluetooth
-//        }
 
         charge.setOnClickListener(new View.OnClickListener() {
             String[] typeVehicle;
@@ -67,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
                     cargaDatos();
                     typeVehicle = datos[2].split(":");
                     vehiculo = typeVehicle[1];
-//                    data.append(vehiculo);
 
                     Map<String, Object> fallos = new HashMap<>();
                     fallos.put("P0626", "Alternator field terminal - circuit high");
@@ -110,14 +92,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent saved = new Intent(MainActivity.this, FallosGuardados.class);
                 startActivity(saved);
-            }
-        });
-
-        profiles.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent profiles = new Intent(MainActivity.this, Perfiles.class);
-                startActivity(profiles);
             }
         });
     }

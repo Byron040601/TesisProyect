@@ -16,7 +16,9 @@
     <string name="tres">3. Los códigos obtenidos permanentes indican fallas confirmadas.</string>
     <string name="read">Comenzar</string>
     <string name="back">Atrás</string>
-    <string name="vel_med">Velocidad media</string>
+    <string name="visualizacion_estadisticas">Visualización de Estadisticas</string>
+    <string name="promedio_datos">Promedio de datos obtenidos</string>
+    <string name="fallos_mayo">Fallos mayoritarios</string>
     <string name="km_h">km/h</string>
     <string name="dist_rec">Distancia recorrida</string>
     <string name="km">km</string>

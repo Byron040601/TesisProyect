@@ -11,8 +11,13 @@ android {
         targetSdk 31
         versionCode 1
         versionName "1.0"
-
+        testApplicationId "com.example.tesis.tests"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    testOptions{
+        reportDir = "$project.buildDir/results/report"
+        resultsDir = "$project.buildDir/results"
     }
 
     buildTypes {
