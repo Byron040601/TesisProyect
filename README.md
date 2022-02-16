@@ -28,6 +28,11 @@ Cabe resalatar que en ciertos casos no se permitirá instalar aplicaciones de se
 
 ![image](https://user-images.githubusercontent.com/58042215/154346916-9208b3df-f623-428d-b7b6-b5af244fd258.png)
 
+###### Aplicación en funcionamiento
+
+Una vez instalada la aplicación móvil podemos observar su funcionamiento entrando en la misma, para ello, podemos encontrarla en nuestro menú de aplicaciones del teléfono móvil
+
+![image](https://user-images.githubusercontent.com/58042215/154349618-c81d2f62-2013-4aa8-996b-6f0a3bd25c2b.png) ![image](https://user-images.githubusercontent.com/58042215/154349673-f6d10eb7-d417-4c52-9e7e-7d1266771e98.png)
 
 
 
